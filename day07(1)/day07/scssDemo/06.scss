@@ -1,0 +1,16 @@
+//公共样式  我们有没有在很多个页面都要使用的样式呢
+
+//声明公共样式  一般情况下 _开头
+//引入的时候通过 @import 引入  可以省略_ 和.scss后缀
+@import "base";
+@import "mixin";
+
+
+#div1{
+    ul{
+        li{
+            @include clearBoth;
+            width: 300px;
+        }
+    }
+}

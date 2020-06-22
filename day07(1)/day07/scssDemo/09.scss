@@ -1,0 +1,20 @@
+//我们在scss封装函数
+$colors: (light: white, dark: black);
+
+@function color($key){
+    //如果我们传入的键，不存在的话，我们希望他可以报错或者警告
+    //我们可以自己编写报错机制和警告机制
+
+    //判断映射里面有没有这个键，如果没有，执行这个if语句
+    @if not map-has-key($colors, $key){
+        // @warn "在$colors这个映射里，没有#{$key}这个键";  警告并不会中断我们的程序
+        @error "在$colors这个映射里，没有#{$key}这个键";
+    }
+    //在映射中，通过键，返回值
+    @return map-get($colors, $key);
+}
+
+body{
+    color: color(dark);
+    
+}

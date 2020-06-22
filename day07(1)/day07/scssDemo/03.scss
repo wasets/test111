@@ -1,0 +1,20 @@
+//属性嵌套  不常用
+
+#div2{
+    border:{
+        style: solid;
+        left: {
+            width: 1px;
+            color: red;
+        }
+        right: {
+            width: 3px;
+            color: orange;
+        }
+    }
+}
+
+#div3{
+    border-left: 1px solid red;
+    border-right: 3px solid orange;
+}

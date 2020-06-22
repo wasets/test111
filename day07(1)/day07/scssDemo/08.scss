@@ -1,0 +1,57 @@
+/*
+    控制语句
+    if语句
+
+    遇到过节
+    只需要主题一改
+*/
+$theme: xxx;
+body{
+    @if $theme == dark{
+        background-color: black;
+    }@else if $theme == light{
+        background-color: white;
+    }@else{
+        background-color: gray;
+    }
+}
+
+
+/*
+    for 循环
+    scss给大家提供了两种for循环
+*/
+$count: 12;
+//through 包含结束位置
+@for $i from 1 through $count{
+    .col-lg-#{$i}{
+        width: 100% / $count * $i;
+    }
+}
+
+//to 不包含结束位置
+@for $i from 1 to $count{
+    .col-md-#{$i}{
+        width: 100% / $count * $i;
+    }
+}
+
+
+//each  遍历列表
+$icons: success danger warning info primary;
+@each $icon in $icons{
+    .icon-#{$icon}{
+        background:url(../images/#{$icon}.png);
+    }
+}
+
+
+
+//while 循环
+$num: 6;
+@while $num > 0{
+    .item-#{$num}{
+        width: 2em * $num;
+    }
+    $num: $num - 1;
+}

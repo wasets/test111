@@ -1,0 +1,12 @@
+.alert, .alert-danger, .alert-success {
+  font-size: 12px; }
+  .alert a, .alert-danger a, .alert-success a {
+    text-decoration: none; }
+    .alert a:hover, .alert-danger a:hover, .alert-success a:hover {
+      color: orange; }
+
+.alert-danger {
+  color: red; }
+
+.alert-success {
+  color: greenyellow; }

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+#div1 {
+  width: 50%;
+  height: 300px;
+  background-color: red; }
+
+/*
+    多行注释  会在css代码中保留，但是压缩版本中不会保留
+*/
+/*!
+    强制注释，任何版本下都会保留，包括压缩版本
+*/

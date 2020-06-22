@@ -1,0 +1,24 @@
+//取消页面所有的边框的时候
+html, body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, table, td, tr, th, fieldset {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    font-size: 12px; }
+  
+  fieldset, img {
+    border: none; }
+  
+  h1, h2, h3, h4, h5, h6, b, strong, i, em, u {
+    font-weight: normal;
+    font-style: normal; }
+  
+  ul, ol, li {
+    list-style: none; }
+  
+  a {
+    text-decoration: none;
+    color: #000; }
+  
+  img {
+    vertical-align: middle; }

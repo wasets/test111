@@ -1,0 +1,17 @@
+//普通注释  在css代码中不会保留
+
+#div1{
+    width: percentage(500px/1000px);
+    height: 100px + 200px;
+    background-color: red;
+
+    
+}
+
+/*
+    多行注释  会在css代码中保留，但是压缩版本中不会保留
+*/
+
+/*!
+    强制注释，任何版本下都会保留，包括压缩版本
+*/
